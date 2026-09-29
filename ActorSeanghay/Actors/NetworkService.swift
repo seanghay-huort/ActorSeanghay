@@ -16,7 +16,7 @@ import Foundation
 /// only ever communicate with each other through async function calls
 /// — never by reaching into each other's stored properties.
 actor NetworkService {
-    enum NetworkError: Error {
+    nonisolated enum NetworkError: Error {
         case simulatedFailure
     }
 
